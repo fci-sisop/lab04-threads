@@ -1,8 +1,5 @@
 # Lab 4 - Threads
 
-Quatro exercícios curtos. Meta de tempo: **30 minutos**. O resto do
-laboratório é do projeto.
-
 Cada exercício tem um `TODO` de cinco a dez linhas. O script `rodar.sh`
 executa tudo e imprime o resumo que as perguntas usam.
 
@@ -87,7 +84,7 @@ das threads pegasse B antes de A, o que poderia acontecer?
 
 ## Glossário
 
-Uma frase por termo, com base no comportamento observado nos exercícios.
+Complete com uma frase por termo, com base no comportamento observado nos exercícios.
 
 - **thread**:
 - **dado compartilhado**:
@@ -102,16 +99,7 @@ Uma frase por termo, com base no comportamento observado nos exercícios.
 
 Este arquivo preenchido e os quatro `TODO` implementados.
 
-**Checkpoint (durante a aula, não recuperável):** commit com os campos 1.1 a
-4.2 respondidos, ainda que algum `TODO` não esteja pronto.
-**Conclusão (até o Lab 5):** os quatro `TODO` e o glossário.
-
-```
-bash check.sh
-git tag submit/lab04 && git push origin submit/lab04
-```
-
 Nota sobre os `usleep()` dos exercícios 2 e 4: eles alargam a janela entre ler
 um valor compartilhado e escrevê-lo de volta, onde o defeito já existe. Sem
 eles o erro aparece uma vez a cada muitas execuções, o que explica bugs de
-concorrência que passam pelo teste e aparecem em produção.
+concorrência que passam pelo teste e aparecem em produção, que vimos em aula.
